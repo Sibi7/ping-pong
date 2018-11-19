@@ -1,0 +1,109 @@
+body {
+    background: #eeeeee;
+    min-width: 1200px;
+}
+
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+
+#fraction-1-2, #fraction-1-4, #fraction-1-8 {
+    display: none;
+}
+
+.round-table {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.round {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-flex: 4 0 auto;
+    -ms-flex: 4 0 auto;
+    flex: 4 0 auto;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+.round-table ul {
+    margin: 0;
+    padding: 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    list-style: none;
+    -webkit-flex: 8 0 auto;
+    -ms-flex: 8 0 auto;
+    flex: 8 0 auto;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+.round::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    border-top: 1px solid #ced4da;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.round::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    border-top: 1px solid #ced4da;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.round-table p {
+    border: 1px solid #ced4da;
+    margin: .5em 0;
+    border-radius: .25rem;
+    padding: 1em;
+    background: #fff;
+    color: #495057;
+    -webkit-flex: 3 0 auto;
+    -ms-flex: 3 0 auto;
+    flex: 3 0 auto;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.container {
+    min-width: 1140px;
+}
+
+.print {
+    position: fixed;
+    top: 25px;
+    left: 80px;
+    display: none;
+    transition: 500ms ease;
+}
