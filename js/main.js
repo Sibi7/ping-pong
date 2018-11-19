@@ -2,8 +2,8 @@ $(function () {
 
     var sumPlayer = $('.sum-player'), //получаем количество выбранных игроков
         playerRegisterBlock = $('.player-registration'), // получаем блок с регистрацией игроков
-        btnNext = '<button type="button" class="btn btn-dark btn-next" disabled>Рандом</button>',
-        btnPrint = $('.print');//сохраняем кнопку далее
+        btnRandom = '<button type="button" class="btn btn-dark btn-random" disabled>Рандом</button>', //сохраняем кнопку далее
+        btnPrint = $('.print');//сохраняем кнопку печать
 
     //Сохраняем value инпута в масив
     function saveValue(player, input) {
@@ -12,36 +12,38 @@ $(function () {
         });
     }
 
-    //Функция сортировки Игроков
+    //Функция рандомной сортировки Игроков
     function compareRandom() {
         return Math.random() - 0.5;
     }
 
+// проверяем какое количество игроков было выбранно в селекте, если 4 значит добавляем 4 инпута. аналогично работают другие if
     function checkValPlayer(valSelect) {
         if (valSelect.val() === '4') {
             numberPlayers(4);
-            playerRegisterBlock.append(btnNext);
-            $('#fraction-1-2').css('display','flex');
+            playerRegisterBlock.append(btnRandom);
+            $('#fraction-1-2').css('display', 'flex');
         } else {
             $('#fraction-1-2').hide();
         }
         if (valSelect.val() === '8') {
             numberPlayers(8);
-            playerRegisterBlock.append(btnNext);
-            $('#fraction-1-4').css('display','flex');
+            playerRegisterBlock.append(btnRandom);
+            $('#fraction-1-4').css('display', 'flex');
         } else {
             $('#fraction-1-4').hide();
         }
         if (valSelect.val() === '16') {
             numberPlayers(16);
-            playerRegisterBlock.append(btnNext);
-            $('#fraction-1-8').css('display','flex');
+            playerRegisterBlock.append(btnRandom);
+            $('#fraction-1-8').css('display', 'flex');
         } else {
             $('#fraction-1-8').hide();
         }
     }
 
 
+    //в зависимости от value указанного в select добавляем количство инпутов для регистрации на турнире
     function numberPlayers(val) {
 
         for (var i = 1; i <= val; i++) {
@@ -49,6 +51,7 @@ $(function () {
                 .append('<input class="form-control mb-16 name-player empty_field" type="text">');
         }
 
+// делаем нумерацию инпутов и добавляем placeholder
         function saveIndex() {
             var inp = playerRegisterBlock.find('input');
             inp.each(function (index) {
@@ -58,11 +61,12 @@ $(function () {
 
         saveIndex()
     }
-    function checkInput(){
+// проверям инпуты на заполненность, если инпут не заполнен - кнопка "рандом" disabled
+    function checkInput() {
         var input = $('input');
-        var btn = $('.btn-next');
-        input.each(function(){
-            if($(this).val() !== ''){
+        var btn = $('.btn-random');
+        input.each(function () {
+            if ($(this).val() !== '') {
                 // Если поле не пустое удаляем класс-указание
                 $(this).removeClass('empty_field');
             } else {
@@ -72,28 +76,29 @@ $(function () {
             }
         });
     }
-
+    // Событие change для input
     $(document).on('change', 'input', function () {
-        var btn = $('.btn-next');
+        var btn = $('.btn-random');
 
         var input = $('input'),
             player = [];
         saveValue(player, input);
         checkInput();
-        if(!input.hasClass('empty_field')){
+        if (!input.hasClass('empty_field')) {
             btn.removeAttr('disabled');
         }
 
     });
 
-    $(document).on('click', '.btn-next', function () {
+    // Событие click для кнопки рандом
+    $(document).on('click', '.btn-random', function () {
         var input = $('input'),
             namePlayerResult,
             player = [];
         saveValue(player, input);
         player.sort(compareRandom);
         if (sumPlayer.val() === '4') {
-          namePlayerResult = $('#fraction-1-2 p.name-player');
+            namePlayerResult = $('#fraction-1-2 p.name-player');
         }
         if (sumPlayer.val() === '8') {
             namePlayerResult = $('#fraction-1-4 p.name-player');
@@ -102,12 +107,11 @@ $(function () {
             namePlayerResult = $('#fraction-1-8 p.name-player');
         }
         namePlayerResult.each(function (index) {
-            $(this).text([index+1 + '. ']+player[index]);
+            $(this).text([index + 1 + '. '] + player[index]);
         });
-
-        btnPrint.fadeIn(100);
+        btnPrint.fadeIn(100); // после нажатия кнопки рандом показываем кнопку "Печать"
     });
-
+// событие change для select= 'selected'
     $(document).on('change', '.sum-player', function () {
         var namePlayer = $('p.name-player');
         if (playerRegisterBlock.find('input').length > 0) {
