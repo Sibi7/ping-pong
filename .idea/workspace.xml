@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31c4bf29-587e-404a-9c1f-81d975f37b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="31c4bf29-587e-404a-9c1f-81d975f37b12" name="Default Changelist" comment="add comments for js file">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,25 +84,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="14" />
           <entry key="html" value="21" />
           <entry key="js" value="857" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
           <entry key="JavaScript" value="857" />
+          <entry key="PLAIN_TEXT" value="49" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="116" column="10" lean-forward="true" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+            <state relative-caret-position="451">
+              <caret line="117" column="53" lean-forward="true" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#ul#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -115,6 +126,15 @@
                 <element signature="n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -173,6 +193,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -203,18 +224,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="tesnis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesnis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesnis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesnis" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesnis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesnis" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="ping-pong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ping-pong" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,12 +267,20 @@
       <workItem from="1542475965666" duration="18641000" />
       <workItem from="1542497706073" duration="8669000" />
       <workItem from="1542529869271" duration="2900000" />
-      <workItem from="1542613388109" duration="2691000" />
+      <workItem from="1542613388109" duration="2994000" />
     </task>
+    <task id="LOCAL-00001" summary="add comments for js file">
+      <created>1542616177615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542616177615</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59117000" />
+    <option name="totallyTimeSpent" value="59420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -294,6 +313,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add comments for js file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments for js file" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -311,8 +334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="116" column="10" lean-forward="true" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+        <state relative-caret-position="451">
+          <caret line="117" column="53" lean-forward="true" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#ul#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -323,6 +346,13 @@
             <element signature="n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
