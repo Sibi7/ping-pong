@@ -1,1 +1,4 @@
-.idea/
+.idea
+.git
+/node_modules
+gulpfile.js
